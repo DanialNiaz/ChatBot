@@ -27,7 +27,7 @@ export class AppComponent implements OnInit, OnDestroy {
     this.socket.onmessage = (event: MessageEvent) => {
       const response = JSON.parse(event.data);
 
-      // If StatusCode is 200, show fulfillmentText; otherwise, show an error
+      // If StatusCode is 200, show fulfillmentText;
       if (response.StatusCode === 200) {
         this.departureCity = response.departureCity || 'N/A';
         this.arrivalCity = response.arrivalCity || 'N/A';

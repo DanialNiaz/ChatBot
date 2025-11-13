@@ -8,13 +8,19 @@ namespace DialogFlowChatBot.Services
 {
     public class WebSocketService
     {
-        private readonly IDialogFlowService _dialogflowService;
 
+        #region fields
+        private readonly IDialogFlowService _dialogflowService;
+        #endregion
+
+        #region ctor
         public WebSocketService(IDialogFlowService dialogflowService)
         {
             _dialogflowService = dialogflowService;
         }
+        #endregion
 
+        #region method
         public async Task HandleChatAsync(WebSocket webSocket)
         {
             var buffer = new byte[4096];
@@ -73,5 +79,7 @@ namespace DialogFlowChatBot.Services
                 }
             }
         }
+        
+        #endregion
     }
 }

@@ -1,10 +1,8 @@
 <div class="chat-container">
-  <!-- Heading -->
   <div class="chat-header">
      Chatbot using Dialogflow
   </div>
 
-  <!-- Messages -->
   <div class="messages-area">
     <div *ngFor="let msg of messages" 
          [ngClass]="{'user': msg.sender==='user','bot': msg.sender==='bot'}" 
@@ -13,7 +11,6 @@
     </div>
   </div>
 
-  <!-- Input area -->
   <div class="input-area">
     <input [(ngModel)]="messageText" placeholder="Type a message..." (keyup.enter)="sendMessage()" />
     <button (click)="sendMessage()">Send</button>
