@@ -48,8 +48,6 @@ namespace DialogFlowChatBot.Services
                     var response = new BaseResponseModel<ChatBotResponse>(true)
                     {
                         Result = dialogflowResponse.Result,
-                        DepartureCity = dialogflowResponse.DepartureCity,
-                        ArrivalCity = dialogflowResponse.ArrivalCity,
                         StatusCode = (int)HttpStatusCode.OK,
                         Messages = new List<string> { "Processed successfully" }
                     };
