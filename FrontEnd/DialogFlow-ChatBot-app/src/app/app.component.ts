@@ -14,9 +14,6 @@ export class AppComponent implements OnInit, OnDestroy {
   messageText = '';
   private socket!: WebSocket;
 
-  departureCity: string = '';
-  arrivalCity: string = '';
-
   constructor() {}
 
   ngOnInit(): void {
@@ -29,9 +26,6 @@ export class AppComponent implements OnInit, OnDestroy {
 
       // If StatusCode is 200, show fulfillmentText;
       if (response.StatusCode === 200) {
-        this.departureCity = response.departureCity || 'N/A';
-        this.arrivalCity = response.arrivalCity || 'N/A';
-
         // Add bot's response message
         this.addMessage({ sender: 'bot', text: response.Result.QueryResult.FulfillmentText });
       } else {
