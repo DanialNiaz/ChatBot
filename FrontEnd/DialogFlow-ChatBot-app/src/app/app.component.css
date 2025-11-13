@@ -1,0 +1,107 @@
+.chat-header {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: #4A90E2;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+    border-radius: 12px 12px 0 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  /* Chat container */
+  .chat-container {
+    width: 400px;
+    max-width: 100%;
+    margin: 30px auto;
+    border-radius: 16px;
+    border: 1px solid #e0e0e0;
+    padding: 0; /* remove extra padding, handled by inner container */
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: #f9f9f9;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Messages container inside chat */
+  .messages-area {
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 8px; /* spacing between messages */
+  }
+  
+  /* User messages */
+  .user {
+    background: linear-gradient(120deg, #DCF8C6, #C7F0A9);
+    align-self: flex-end;
+    color: #333;
+    padding: 12px 18px;
+    border-radius: 25px 25px 5px 25px; /* more rounded on top & bottom */
+    max-width: 70%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+  }
+  
+  /* Bot messages */
+  .bot {
+    background: linear-gradient(120deg, #E5E5EA, #D1D1D6);
+    align-self: flex-start;
+    color: #333;
+    padding: 12px 18px;
+    border-radius: 25px 25px 25px 5px; /* more rounded on top & bottom */
+    max-width: 70%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    word-wrap: break-word;
+  }
+  
+  /* Input area */
+  .input-area {
+    display: flex;
+    gap: 10px;
+    padding: 12px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+  }
+  
+  /* Input field */
+  input {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: 0.2s all ease-in-out;
+  }
+  
+  input:focus {
+    border-color: #4A90E2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  }
+  
+  /* Send button */
+  button {
+    background-color: #4A90E2;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s all ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #357ABD;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  

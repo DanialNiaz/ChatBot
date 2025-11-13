@@ -1,0 +1,6 @@
+@DialogFlowChatBot_HostAddress = http://localhost:5106
+
+GET {{DialogFlowChatBot_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "MXhntUR9sUivIptpKK6ATgIej4rzj8ZFiMeOX+8NFFQ=",
+  "Source": "DialogFlowChatBot",
+  "BasePath": "_content/DialogFlowChatBot",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

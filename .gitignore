@@ -1,0 +1,19 @@
+# === Global ===
+node_modules/
+dist/
+build/
+.env
+*.log
+.DS_Store
+
+# === Angular ===
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/cache/
+frontend/.env
+
+# === .NET ===
+backend/bin/
+backend/obj/
+backend/.vs/
+backend/appsettings.Development.json
