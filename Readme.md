@@ -54,8 +54,6 @@ chatbot-angular/
 │  │  ├─ app.component.html
 │  │  ├─ app.component.css
 │  │  ├─ app.module.ts
-│  │  ├─ services/
-│  │  │  └─ WebSocketServiceService.ts
 │  │  └─ models/
 │  │     └─ chat-message.model.ts
 │  └─ assets/
